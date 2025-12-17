@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe Script', cursive;
+}
+
+.bg {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff4e8d, #ff9a9e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    animation: zoom 1.5s ease;
+    max-width: 500px;
+}
+
+.big {
+    max-width: 650px;
+}
+
+@keyframes zoom {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.soft {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.poem {
+    font-size: 1.3em;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: white;
+    color: #ff4e8d;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff4e8d;
+    color: white;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
